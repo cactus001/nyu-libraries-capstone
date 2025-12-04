@@ -1,0 +1,2 @@
+--- Page 0 ---
+PCLP Loan NameLoan NumberDate FundedOriginal Debenture Gross AmountFinancial Institution Issuing Letter of CreditLetter of Credit TermAmount of Letter of CreditIndicate if Paid -in- Full or Charged off During QuarterPercentage of Debenture TOTALS: PERCENTAGE: Signature: Date:Quarter Ending:__________________________________________Sample: PCLP Quarterly LLRF Reconciliation Report (Letter of Credit) PCLP Name: ____________________________________________ CDC#: _________________________________________________

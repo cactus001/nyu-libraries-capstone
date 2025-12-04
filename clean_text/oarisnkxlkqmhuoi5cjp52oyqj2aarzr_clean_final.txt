@@ -1,0 +1,8 @@
+--- Page 0 ---
+Belarus - Corporate Taxation Indicators Summary of Statistics Corporate Income Tax Rate Economy/Region citrStd. Dev MinMaxMax Belarus 24.00-- ----1 Central Europe and Central Asia Region15.035.36 0.0024.0030 Low-middle-income Economies Group 22.6210.71 0.0045.0056 World 23.909.88 0.0050.00193
+
+--- Page 1 ---
+Summary of Statistics Corporate Income Tax Revenues Economy/Region cityStd. Dev MinMaxMax Belarus 0.95-- ----1 Central Europe and Central Asia Region2.081.79 0.319.1028 Low-middle-income Economies Group 3.683.45 0.0121.5048 World 3.323.01 0.0121.50167
+
+--- Page 2 ---
+Summary of Statistics Corporate Income Tax Revenue Productivity Economy/Region citpro dStd. Dev MinMaxMax Belarus 0.04-- ----1 Central Europe and Central Asia Region0.140.12 0.020.4927 Low-middle-income Economies Group 0.180.18 0.000.8646 World 0.150.16 0.000.99164

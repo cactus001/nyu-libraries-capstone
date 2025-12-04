@@ -1,15 +1,16 @@
+# code/embed_chunks_local.py
 import json
 from pathlib import Path
 
 from sentence_transformers import SentenceTransformer  # pip install sentence-transformers torch
-
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 INPUT_CHUNKS = BASE_DIR / "chunks_token_based_all.jsonl"
 OUTPUT_EMBEDS = BASE_DIR / "chunks_with_embeddings_all_local.jsonl"
 
-MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+# Strong retrieval model
+MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
 BATCH_SIZE = 64
 
 
@@ -35,13 +36,11 @@ def main():
             batch_records.append(rec)
             batch_texts.append(rec["text"])
 
-            # When batch is full, embed and write out
             if len(batch_records) >= BATCH_SIZE:
                 process_batch(model, batch_records, batch_texts, fout)
                 batch_records = []
                 batch_texts = []
 
-        # Process any leftover records
         if batch_records:
             process_batch(model, batch_records, batch_texts, fout)
 
@@ -49,9 +48,6 @@ def main():
 
 
 def process_batch(model, records, texts, fout):
-    """
-    Encodes a batch of texts and writes them with embeddings.
-    """
     embeddings = model.encode(texts, show_progress_bar=False)
 
     for rec, emb in zip(records, embeddings):
@@ -60,7 +56,7 @@ def process_batch(model, records, texts, fout):
             "chunk_id": rec["chunk_id"],
             "page": rec["page"],
             "text": rec["text"],
-            "embedding": emb.tolist(),  # numpy array -> plain list
+            "embedding": emb.tolist(),  # numpy array -> list
         }
         fout.write(json.dumps(out_record, ensure_ascii=False) + "\n")
 

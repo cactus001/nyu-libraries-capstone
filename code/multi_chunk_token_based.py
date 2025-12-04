@@ -7,10 +7,11 @@ import tiktoken  # pip install tiktoken
 
 from config_docs import DOCS, BASE_DIR
 
-
 ENCODING_NAME = "cl100k_base"
-CHUNK_SIZE_TOKENS = 800
-CHUNK_OVERLAP_TOKENS = 200
+
+# More focused chunks
+CHUNK_SIZE_TOKENS = 256
+CHUNK_OVERLAP_TOKENS = 64
 
 CLEAN_DIR = BASE_DIR / "clean_text"
 OUTPUT_CHUNKS = BASE_DIR / "chunks_token_based_all.jsonl"
@@ -44,7 +45,7 @@ def load_pages_with_numbers(text: str):
 def chunk_page_text(page_text: str, enc):
     """
     Token-based chunking for a single page.
-    Returns list of token-sequences (list[int]).
+    Returns list of token-id sequences.
     """
     tokens = enc.encode(page_text)
     chunks = []

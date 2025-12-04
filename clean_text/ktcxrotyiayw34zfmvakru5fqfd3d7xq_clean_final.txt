@@ -1,0 +1,2 @@
+--- Page 0 ---
+From Power SupplyTo Magnet LinkBox1010A-r1 0ad9-Deut.skf 11/25/02Service Bui lding 1010A Position R10AD9 Y10D0 Y10DR B10D0 yi10-dh0(pos) 4 cablesyi10-dh0(neg) 4 cablesbo10-dh0(neg) 2 cablesB10DX bo10-dhx(pos) 4 cablesB10DR1 bo10-dh0(pos) 2 cablesB10DR2 bo10-dhx(neg) 4 cablesSetup Blue Ring = Deuterons Yellow Ring = Gold

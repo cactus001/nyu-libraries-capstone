@@ -1,0 +1,53 @@
+--- Page 0 ---
+us200 400 600 800 1000 1200 1400110210310FirstDSM -> LastDSM (including BTOW & ETOW if in run) (Run 16167101) Entries 10000Mean 201.2RMS 109.7 FirstDSM -> LastDSM (including BTOW & ETOW if in run) (Run 16167101) us10 20 30 40 50110210310410lastDSM -> trg Entries 10000Mean 5.316RMS 2.371 lastDSM -> trg
+
+--- Page 1 ---
+us6 8 10 12 14 16 18 20 22 24 26 28110210310410L2 algorithm time (Total) (trg -> evtacc) Entries 10000Mean 5.23RMS 0.9513 L2 algorithm time (Total) (trg -> evtacc) us10 15 20 25 30 35 40 45110210310Accept or Abort (evtacc -> accsent) Entries 10000Mean 12.66RMS 2.545 Accept or Abort (evtacc -> accsent)
+
+--- Page 2 ---
+us0 2 4 6 8 10 12 14 16 18 20110210310Release (accsent -> relsent) Entries 10000Mean 2.409RMS 1.918 Release (accsent -> relsent) percent of run0 10 20 30 40 50 60 70 80 90Hz 050010001500200025003000input rateinput rate
+
+--- Page 3 ---
+us200 400 600 800 1000 1200 1400110210310firstDSM->accept (or abort) sent Entries 10000Mean 227.2RMS 110.9 firstDSM->accept (or abort) sent us20 30 40 50 60 70 80110210310lastDSM -> accept (or abort) (L2 processing time) Entries 10000Mean 25RMS 3.566 lastDSM -> accept (or abort) (L2 processing time)
+
+--- Page 4 ---
+us-1000-800 -600 -400 -200 0 200110210310410BBC times (relative to L1)Entries 10000Mean 8.713RMS 25.57BBC times (relative to L1) us-1000-800 -600 -400-200 0 200110210310410BC1 times (relative to L1)Entries 10000Mean 45.98RMS 29.13BC1 times (relative to L1) us-1000-800 -600 -400 -200 0 200110210310410BCE times (relative to L1)Entries 10000Mean 34.74RMS 28.87BCE times (relative to L1) us-1000-800 -600 -400 -200 0 200110210310410BCW times (relative to L1)Entries 10000Mean 53.4RMS 29.95BCW times (relative to L1)
+
+--- Page 5 ---
+us-1000 -500 0 500 1000 1500110210310BBQ times (relative to L1)Entries 10000Mean 149.3RMS 103.8BBQ times (relative to L1) us-1000 -800-600 -400-200 0 200400600800110210310FMS times (relative to L1)Entries 10000Mean 70.54RMS 109.1FMS times (relative to L1) us-1000-800 -600 -400 -200 0 200110210310410MIX times (relative to L1)Entries 10000Mean 21.6RMS 26.86 MIX times (relative to L1) us-1400-1200-1000-800 -600 -400 -200 0110210310L1 times (relative to lastDSMin)Entries 10000Mean -188RMS 108.2L1 times (relative to lastDSMin)
+
+--- Page 6 ---
+us-1000 -500 0 500 1000110210310QT1 times (relative to L1)Entries 10000Mean 101.4RMS 112.5QT1 times (relative to L1) us-1000 -500 0 500 1000110210310QT2 times (relative to L1)Entries 10000Mean 118.7RMS 113.1QT2 times (relative to L1) us-1000 -500 0 500 1000110210310QT3 times (relative to L1)Entries 10000Mean 120.4RMS 113QT3 times (relative to L1) us-1000 -500 0 500 1000110210310QT4 times (relative to L1)Entries 10000Mean 105.1RMS 112.2 QT4 times (relative to L1)
+
+--- Page 7 ---
+us-1000 -500 0 500 1000110210310410MXQ times (relative to L1)Entries 10000Mean 80.61RMS 58.28MXQ times (relative to L1) us10 10.0000110.0000210.0000310.0000410.0000510.0000610.0000710.0000810.00009610×-210-110110FEQ times (relative to L1)Entries 0Mean 0RMS 0FEQ times (relative to L1)
+
+--- Page 8 ---
+us10 10.00001 10.00002 10.00003 10.00004 10.00005 10.00006 10.00007 10.00008 10.00009610×-210-110110BTOW arrival (relative to L1) Entries 0Mean 0RMS 0 BTOW arrival (relative to L1) us10 10.00001 10.00002 10.00003 10.00004 10.00005 10.00006 10.00007 10.00008 10.00009610×-210-110110ETOW arrival (relative to L1) Entries 0Mean 0RMS 0 ETOW arrival (relative to L1)
+
+--- Page 9 ---
+us10 10.00001 10.00002 10.00003 10.00004 10.00005 10.00006 10.00007 10.00008 10.00009610×-210-110110BTOW arrival (relative to firstDSM) Entries 0Mean 0RMS 0 BTOW arrival (relative to firstDSM) us10 10.00001 10.00002 10.00003 10.00004 10.00005 10.00006 10.00007 10.00008 10.00009610×-210-110110ETOW arrival (relative to firstDSM) Entries 0Mean 0RMS 0 ETOW arrival (relative to firstDSM)
+
+--- Page 10 ---
+us10 10.00001 10.00002 10.00003 10.00004 10.00005 10.00006 10.00007 10.00008 10.00009610×-210-110110BTOW compute done (relative to firstDSM) Entries 0Mean 0RMS 0 BTOW compute done (relative to firstDSM) us10 10.00001 10.00002 10.00003 10.00004 10.00005 10.00006 10.00007 10.00008 10.00009610×-210-110110ETOW compute done (relative to firstDSM) Entries 0Mean 0RMS 0 ETOW compute done (relative to firstDSM)
+
+--- Page 11 ---
+us-1 -0.5 0 0.5 110210310410BTOW calibrate time Entries 10000Mean 0RMS 0 BTOW calibrate time us-1 -0.5 0 0.5 110210310410ETOW calibrate time Entries 10000Mean 0RMS 0 ETOW calibrate time
+
+--- Page 12 ---
+us-1 -0.5 0 0.5 110210310410BTOW calibrate time Entries 10000Mean 0RMS 0 BTOW calibrate time us-1 -0.5 0 0.5 110210310410BTOW compute time Entries 10000Mean 0RMS 0 BTOW compute time
+
+--- Page 13 ---
+us10 10.00001 10.00002 10.00003 10.00004 10.00005 10.00006 10.00007 10.00008 10.00009610×-210-110110BTOW (Last DSM - Compute Done) times cut at 300us Entries 0Mean 0RMS 0 BTOW (Last DSM - Compute Done) times cut at 300us us10 10.00001 10.00002 10.00003 10.00004 10.00005 10.00006 10.00007 10.00008 10.00009610×-210-110110ETOW (Last DSM - Compute Done) times cut at 300us Entries 0Mean 0RMS 0 ETOW (Last DSM - Compute Done) times cut at 300us
+
+--- Page 14 ---
+us10 10.00001 10.00002 10.00003 10.00004 10.00005 10.00006 10.00007 10.00008 10.00009610×-210-110110BTOW (Last DSM - Compute Done) Full timescale Entries 0Mean 0RMS 0 BTOW (Last DSM - Compute Done) Full timescale us10 10.00001 10.00002 10.00003 10.00004 10.00005 10.00006 10.00007 10.00008 10.00009610×-210-110110ETOW (Last DSM - Compute Done) Full timescale Entries 0Mean 0RMS 0 ETOW (Last DSM - Compute Done) Full timescale
+
+--- Page 15 ---
+-1 -0.5 0 0.5 110210310410L1 Time 1Entries 10000Mean 0RMS 0L1 Time 1 us-1 -0.5 0 0.5 110210310410L1 Time 2Entries 10000Mean 0RMS 0L1 Time 2 us-1 -0.5 0 0.5 110210310410L1 Time 3Entries 10000Mean 0RMS 0L1 Time 3
+
+--- Page 16 ---
+us0 0.5 1 1.5 2 2.5 3 3.5 4-310-210-1101alg1Entries 2Mean 2RMS 1 alg1 us0 1 2 3 4 5 6 7-310-210-1101alg2Entries 2Mean 4.5RMS 1.5 alg2 us0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2110210alg3Entries 457Mean 1RMS 0 alg3 us0 0.5 1 1.5 2 2.5 3-210-1101alg4Entries 3Mean 2RMS 0 alg4 us0 0.5 1 1.5 2 2.5 3-310-210-1101alg5Entries 1Mean 2RMS 0 alg5 us0 0.5 1 1.5 2 2.5 3 3.5 4-310-210-1101alg6Entries 1Mean 3RMS 0 alg6 us0 2 4 6 8 10 12 14 16 181alg7Entries 5Mean 5.6RMS 5.643 alg7 us0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2110210alg8Entries 431Mean 1RMS 0 alg8 us0 0.5 1 1.5 2 2.5 3-310-210-1101alg9Entries 1Mean 2RMS 0 alg9 us0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2110210alg10Entries 478Mean 1RMS 0 alg10 us0 1 2 3 4 5 6 7 8 9-310-210-1101alg11Entries 3Mean 4RMS 2.944 alg11 us0 1 2 3 4 5 6 7-310-210-1101alg12Entries 1Mean 6RMS 0 alg12 us0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2110210alg13Entries 426Mean 1RMS 0 alg13 us0 0.5 1 1.5 2 2.5 3 3.5 4-310-210-1101alg14Entries 2Mean 2RMS 1 alg14 us0 2 4 6 8 10 12 14 16 18 201alg15Entries 4Mean 5.5RMS 7.228 alg15 us0 0.5 1 1.5 2 2.5 3-310-210-1101alg16Entries 1Mean 2RMS 0 alg16
+
+--- Page 17 ---
+us0 0.5 1 1.5 2 2.5 3-310-210-1101alg17Entries 2Mean 2RMS 0 alg17 us0 0.5 1 1.5 2 2.5 3-310-210-1101alg18Entries 1Mean 2RMS 0 alg18 us0 1 2 3 4 5 6 7 8-310-210-1101alg19Entries 1Mean 7RMS 0 alg19 us0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2110210alg20Entries 444Mean 1RMS 0 alg20 us0 0.5 1 1.5 2 2.5 3 3.5 4-310-210-1101alg21Entries 2Mean 3RMS 0 alg21 us0 0.5 1 1.5 2 2.5 3-310-210-1101alg22Entries 1Mean 2RMS 0 alg22 us0 1 2 3 4 5 6 7-310-210-1101alg23Entries 2Mean 4RMS 2 alg23 us0 0.5 1 1.5 2 2.5 3-310-210-1101alg24Entries 2Mean 2RMS 0 alg24 us0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2110210alg25Entries 424Mean 1RMS 0 alg25 us0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2110210alg26Entries 419Mean 1RMS 0 alg26 us0 1 2 3 4 5 6 7 8 9-310-210-1101alg27Entries 1Mean 8RMS 0 alg27 us0 0.5 1 1.5 2 2.5 3 3.5 4 4.5 5-310-210-1101alg28Entries 2Mean 4RMS 0 alg28 us0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2110210alg29Entries 456Mean 1RMS 0 alg29 us0 0.5 1 1.5 2 2.5 3 3.5 4-310-210-1101alg30Entries 2Mean 2RMS 1 alg30 us0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 2110210alg31Entries 467Mean 1RMS 0 alg31 us0 2 4 6 8 10 12 14-310-210-1101alg32Entries 3Mean 5.333RMS 5.437 alg32

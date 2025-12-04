@@ -1,0 +1,104 @@
+--- Page 0 ---
+Joël Pouthas IPN Orsay FranceLarge Photomultipliers for the next Astroparticle Physics Experiments Challenges and consequences on the associated electronics
+
+--- Page 1 ---
+Joël Pouthas IPN OrsayUHCR (Ultra High energy cosmic ray) Pierre Auger Observatory (Argentina) Very high dynamic range Low after pulse ratePhotodetectors - Requirements Future AUGER North site (Colorado) BNL 02/25/2008
+
+--- Page 2 ---
+[Dumand (Hawaï)] Baikal Lake (Russia) ANTARES (France)NESTOR (Greece) NEMO (Italy) Joël Pouthas IPN OrsayDeep underwater neutrino telescopes AMANDA / Ice Cube (South Pole) Large area with maximum efficiency Good SER (Single electron response) in charge and time AntaresPhotodetectors - Requirements Future KM3 Net (Mediteraneen Sea) Deployment Ice Cube (South Pole) BNL 02/25/2008
+
+--- Page 3 ---
+Joël Pouthas IPN OrsayNucleon decay and neutrino detectors SNO (Canada) MiniBooNE (USA) Borexino (Italie) Super KamiokandeKamiokaNDE Super KamiokaNDE KamLAND (Japon) Large area with maximum efficiency Good SER (Single electron response) in charge and time Low noisePhotodetectors - Requirements Future UNO Hyper Kamiokande Memphys 10 to 20 times Super K 200 000 to 300 000 Large PMTs !!! BNL 02/25/2008
+
+--- Page 4 ---
+Joël Pouthas IPN OrsayStart with AUGER Surface Detectors PMT : PHOTONIS XP 1805 (9’’) Base design : IPN Orsay (End of 2000) Production : 5000 pieces (2001-2005) Photonis, IPN Orsay, INFN TorinoIPN Orsay / Photonis Collaboration Continue with R&D Program on large Photomultipliers Year 1 (Sept 03-Sept 04) Definition and construction of the test benches Validation on reference PMTs Year 2 (Sept 04-Sept 05) Construction and measurements on different PMTs (5”,8”,9”,10”)Photocathode characterization. Afterpulse measurements Year 3 (Sept 05-Sept 06) End of measurements on standard PMT Afterpulse studies : detailed simulations and measurements BNL 02/25/2008
+
+--- Page 5 ---
+Joël Pouthas IPN OrsayIPN Orsay / Photonis Collaboration Single electron response (SER and P/V) Timing characteristics Photocathode uniformity Detection efficiency (relative)Test Bench 1 Light Source 241Am+NE111 or LED (Ref PMT : XP2020) Mobil carriage BNL 02/25/2008
+
+--- Page 6 ---
+Joël Pouthas IPN OrsayIPN Orsay / Photonis Collaboration Climat cabinet (Voestch VC4034) + Black box (Al) (-40° à +50° )Black box (Wood)Noise After pulses Variation with temperature Magnetic field effects Data Acquisition CAMAC Oscilloscope MATAC (2GHz, 12bits)Test Bench 2 BNL 02/25/2008
+
+--- Page 7 ---
+Joël Pouthas IPN OrsayIPN Orsay / Photonis Overview on results Improved photocathode 051015202530 7,5 8 8,5 9 9,5 10 10,5 11 11,5 12 12,5 Corning blue photocathode sensitivity (uA/lmF)occurrencestandard tubes 051015202530 7,5 8 8,5 9 9,5 10 10,5 11 11,5 12 12,5 Corning Blue photocathode sensitivity (uA/lmF)occurrencestandard tubes improved process 0510152025 30 40 50 60 70 80 90 100 11 0 120 130 140 150 White photocathode sensitivity (uA/lm)occurrencestandard tubes 0510152025 30 40 50 60 70 80 90 100 110 120 130 140 150 White photocathode sensitivity (uA/lm)occurencestandard tubes improved process Increase of Sk CB: ~19% Increase of Sk White: ~42%Standard (~800 PMTs) Sk CB: 9.32 μA/lmF Sk White: 68. 37 μA/lm Improved (~25 PMTs) Sk CB: 11.35 μA/lmF Sk White: 118.00 μA/lmBlue measurement (C orning Blue filter) White measurementXP1805 (9’’, AUGER PMT)D. Dornic et al, Beaune Conf erence, France, June 2005 Nucl. Instr. and Meth. A567 (2006) 527 BNL 02/25/2008
+
+--- Page 8 ---
+charge (ADC)250 260 270 280 290 300 310 320 330 340count 511.522.53adc1_015 Joël Pouthas IPN OrsayIPN Orsay / Photonis Overview on results Improved photocathode Control by Pulse measurements in SER (Relative detection efficiency)Quantum efficiency (400 nm) Standard ~26% Improved ~32% Threshold (pe)0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9counting rate (%) 21.41.61.822.2sn 4751/HP sn 4753/HP sn 5311/HP sn 5368/std sn 5371/std sn 5372/std ~16% StandardImproved temperature (àC)-10 0 10 20 30counting rate (kHz) 05101520 standard improvedDrawbacks ? Dark count rate Same at low temperature Increase with temperature BNL 02/25/2008D. Dornic et al, Beaune Conf erence, France, June 2005 Nucl. Instr. and Meth. A567 (2006) 527
+
+--- Page 9 ---
+Joël Pouthas IPN OrsayIPN Orsay / Photonis Overview on results After-pulses Digital Oscilloscope + PC 100 ns to 20 µs Sampling : 0.5 GSPS500 Events/s difference entre le pic 1 et le pic 2 (ns)1000 2000 3000 4000 5000 6000 7000 8000 9000 100000510152025303540diff12 Background noiseTime distribution 2D : Amplitude versus time BNL 02/25/2008
+
+--- Page 10 ---
+Joël Pouthas IPN OrsayIPN Orsay / Photonis Overview on results After-pulses Time distribution 2D : Amplitude versus time Seuil (pe)0 0.2 0.4 0.6 0.8 1 1. 2Taux de post-impulsions (% ) 123456Rate versus p.e. 2 1 0.6 3 p.e 1 p.e 2 p.e BNL 02/25/2008
+
+--- Page 11 ---
+0510152025 -25 -15 -5 5 15 25 355 pouces (XP1803 n°865) 8 pouces (XP1806 n°869) 10 pouces (XP1804 n°885)Noise (kHz) Temperature (°C)5"8"10"IPN Orsay / Photonis Overview on results Joël Pouthas IPN OrsayNoise (dark pulses) All the main results in PhD of D. Dornic , 09 – 29 - 060,05,010,015,020,025,0 0,0 100,0 200,0 300,0 400,0 500,0 600,0 700,0Noise (kHz) Photocathode surface (cm2)T= 30° 0,00,51,01,52,02,5 0,0 50,0 100,0 150,0 200,0Noise (kHz) Window glass volume (cm3)T= -5° BNL 02/25/2008
+
+--- Page 12 ---
+Joël Pouthas IPN OrsayRequirements on photodetectors generally ask for the best characteristics But… …parameters are often correlated… …A n d a hierarchy with priorities (coming out from impact on physics) must be introduced in the requirements to manufacturersFirst remark BNL 02/25/2008
+
+--- Page 13 ---
+Joël Pouthas IPN OrsayIPN Orsay / Photonis Collaboration New 3 years R&D Program (2006 – 2009) Standard PMTs Photocathode Scint PMT Photocathode Hybrid PMTs “Smart Tube” type (Scintillator) Comparison with standard PMT (Same size, 10’’ or 12”)More detailed studies on : SER (Single Electron Response) ‘’Late pulses’’ (T < 100 ns) with a laser End of the ‘’scaling’’ studies Parameter correlations (5 ” to 12”) , ( No 15”) New types of multipliers R&D for Memphys BNL 02/25/2008
+
+--- Page 14 ---
+Joël Pouthas IPN OrsayBaikal neutrino experiment First developments (1983) "SMART Tube" Philips XP 2600Dumand project & Baikal Scintillator P M Tpe 20 - 30 keVPhotocathode BNL 02/25/2008
+
+--- Page 15 ---
+Joël Pouthas IPN OrsayBaikal neutrino experiment First developments (1983) "SMART Tube" Philips XP 2600 Dumand project & Baikal Then in Russia Baikal experiment Quasar 300 ; Quasar 350 Quasar 370 BNL 02/25/2008
+
+--- Page 16 ---
+Joël Pouthas IPN OrsayBaikal neutrino experiment Quasar 370 Conventional PMT (UGON) Glass bulb Photocathode (SbKCs) Acceleration PE (25 kV) Scintillator (YSO) Large area Good SER (Gain 1st stage : 25)Good TTS : 2.5 ns (FWHM)Characteristics BNL 02/25/2008
+
+--- Page 17 ---
+In collaboration with European Labs Joël Pouthas IPN OrsaySMART Tube @ Photonis Status Philips/Photonis invested 1 M€ and made ~30 pieces 200 Quasars operating for many years -> Proof of life time No ongoing production !C. Marmonier, NNN05, France, April 2005 LIGHT06, Israel, January 2006 On-going R&D Reproduce and improve former tubes Redesign Better scintillator (LSO:Ce, YAP:Ce, ZnO:Ga, LaCl3…) Multi-anode multiplier (rough localization) BNL 02/25/2008
+
+--- Page 18 ---
+Joël Pouthas IPN OrsayHPD Team @ CERN C. Joram et al., CERN-PH-EP/2006-025, August 2006 Nucl. Instr. and Meth. A581 (2007) 469 The X-HPD – Conceptual Study of a Large Spherical Hybrid Photodetector BNL 02/25/2008 “Artistic view” of the half-scale prototype Cubic scintillator + Small PMT
+
+--- Page 19 ---
+Prototype (208 mm glass envelope) Joël Pouthas IPN OrsayHPD Team @ CERN The X-HPD – Conceptual Study of a Large Spherical Hybrid Photodetector Cubic metal anode Test bench for scintillators LSO crystal (SER) BNL 02/25/2008C. Joram et al., CERN-PH-EP/2006-025, August 2006 Nucl. Instr. and Meth. A581 (2007) 469
+
+--- Page 20 ---
+Joël Pouthas IPN OrsayHybrid Photon Detector (HPD) Photonis-DEP Phocathode (18 mm usefull)Silicon PIN diode (2 mm diameter) Focussing electrodes(Total HV : - 15 kV) Excellent photon resolution (Very good SER) Low gain : 3500 @ 15 kV (needs low noise electronics) BNL 02/25/2008
+
+--- Page 21 ---
+Joël Pouthas IPN Orsay 5’’ prototypeHAPD @ Hamamatsu 13’’ prototype Very good SER Very good timing But … still weak signals BNL 02/25/2008Replace the PIN by an APDH. Nakayama, Beaune Conference, France, June 2005 Nucl. Instr. and Meth. A567 (2006) 172
+
+--- Page 22 ---
+Joël Pouthas IPN OrsayAll ideas on photodetection designs are certainly interesting But… …if a mass production is foreseen Constraints from industry must be considered from the beginningSecond remark BNL 02/25/2008Particularly on the costs
+
+--- Page 23 ---
+Joël Pouthas IPN OrsayCost approach Photonis at NNN05C. Marmonier, NNN05, France, April 2005 LIGHT06, Israel, January 2006 Size (Diameter) 20 20(17) 12 Inch Photocathode area 1660 1450 615 cm2 Quantum efficiency 20 20 24 % Collection efficiency 60 60 70 % Cost 2500 2500 800 € 6 14.4 7.7 € /PEU/cm2 Cost/cm2per useful photoelectron Cost / (cm2 x QE x CE) 12" is better in SER and timing 12" provides a higher granularity But, the number of channels is increased BNL 02/25/2008
+
+--- Page 24 ---
+Joël Pouthas IPN OrsayR&D program for Memphys “PMm2” (2006 – 2009) , granted by the ANR (National Agency for Research) Huge amount of very large photodetectors (PMTs of 20” size)Megaton water tanks Proposition Replace large PMTs (20”) by groups of smallerones (12”) Integrated electronics (Multichannel, close to the PMTs)LAL Orsay, IPN Orsay, LAPP Annecy and Photonis BNL 02/25/2008
+
+--- Page 25 ---
+Joël Pouthas IPN OrsayElectronics Variable gain to equalize photomultipliers response and operate with a common high voltage High speed discriminator for Auto Trigger (100 % efficiency @ 1/3 pe) Digitization of charge (Dynamic range up to 300 pe ?) Digitization of time of arrival (Resolution 1 ns) Common Data out Front-end requirements BNL 02/25/2008R&D program PMm2 “No possible local coincidence” (low energy event 10PMs/MeV over 81000 PMTs) ⇓ TRIGGER LESS
+
+--- Page 26 ---
+Joël Pouthas IPN Orsay BNL 02/25/2008DAQ GPS receiverEthernet switches + server “Outside”PMm2Electronics Twisted pairs cables for Clock Synchronization Digitized Data Power ~4 m2 FPGA + µCFE-ASIC Monitoring Network ControllerHV“Local” (16 channels)“No possible local coincidence” (low energy event 10PMs/MeV over 81000 PMTs) ⇓ TRIGGER LESS
+
+--- Page 27 ---
+Joël Pouthas IPN OrsayPMT 64 ch. Readout (OPERA) Variable gain (0-4, 5 bits) Charge multiplexed output (0.1-100 pe) 32 channels chip, 180 mW2000 chips AMS 0.8 µm LAL Orsay BNL 02/25/2008FEE Electronics Micro Electronics ASIC PMT 64 ch. Readout (ATLAS Luminometer) Variable gain (0-4, 6 bits) Charge multiplexed output (0.1-100 pe)64 channels chip, 500 mW 3 thresholds AMS SiGe 0.35 µm
+
+--- Page 28 ---
+Joël Pouthas IPN Orsay BNL 02/25/2008FEE Electronics Micro Electronics ASIC Orsay Micro Electronic Group Associated 2006 MAROC2 ATLAS Luminometer PMT 64 channels 2006 HARDROC ILC Calorimeter CALICE RPC DHCAL 64 channels 2007 SPIROC ILC Calorimeter CALICE AHCAL 36 channels
+
+--- Page 29 ---
+Joël Pouthas IPN Orsay BNL 02/25/2008PMm2Electronics Micro Electronics ASIC CRRC2 Slow Shaper (50, 100, 200 ns) Fast Shaper (15ns)Track & hold DiscriVariable Gain Amplifier (1-5) DAC 10 bitsdelay BandgapVref SSHVref FSHVrefSSH Hold12 bits ADC Ramp TDC24 bits Counter 10 MHzAbsolute timeInputs X 16Charge Serial 16x12bits Time Serial 16x(8÷10) bits Gain correction (4bits)Threshold (10bits)Slow control signals
+
+--- Page 30 ---
+Joël Pouthas IPN Orsay BNL 02/25/2008PMm2Electronics Power, Clock, DATA Transmissions LAPP Annecy Cable 100 m (Twisted pairs) Eye diagram dT(Rx-Tx) Front montant horloge 300350400450500550600650700750800 0 5 10 15 20 25 30 35 Fréquence (MHz)Histo largeur (ps)Clock stabilityFirst tests on DATA and Clock transmission
+
+--- Page 31 ---
+Joël Pouthas IPN Orsay BNL 02/25/2008 PMm2Photomultipliers Integration Parameter correlation studies Signal/Noise @ 1pe (SER) versus Dark current and Quantum & Collection Efficiencies Optimum ? Water tightness Base potting and HV cables Electronics tight box (16 inputs, digital outputs)Photomultipliers @ 10 bars Glass shape optimizationWater pressure test facility Mechanics of the Demonstrator A tank; 16 photomultipliers ; Integrated electronics Definition ?
+
+--- Page 32 ---
+Joël Pouthas IPN Orsay BNL 02/25/2008R&D program PMm2 500k€/3yrs funded by new French Agency (ANR) Started officially 25 Jan. 07k€ 115 119 167 53 50 Engineer (LAL) http://pmm2.in2p3.fr
+
+--- Page 33 ---
+Joël Pouthas IPN Orsay BNL 02/25/2008R&D program PMm2 •L A L – P. Barillion, S. Blin, F. Dulucq, J.E Campagne , Ch. de La Taille, G. Martin-Chassard, L. Raux –S. Conforti (since Sept. 07 for 2 years) •I P N O – B. Genolini, Th. Nguyen Trung, C. Perinet, J. Peyré, J. Pouthas , E. Rindel, Ph. Rosier •L A P P – N. Dumont-Dayot, D. Duchesneau, J. Favier, R. Hermel , J. Tassan-Viol •P h o t –B . C o m b e t t e s , F. FouchéCoordinator Group leaderStudent
+
+--- Page 34 ---
+Joël Pouthas IPN OrsayConcluding remarks The best is generally not the cheapest … But … Do we always need the best ?Most of the photodetectors follows a standard design Some R&D are (or will be) performed on HPD (Hybrid Photon Detector) The design must include electronics Micro-electronics (Asic) Collaboration with industry is mandatory Mass production and cost are key parameters BNL 02/25/2008

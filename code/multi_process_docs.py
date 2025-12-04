@@ -1,3 +1,4 @@
+# code/multi_process_docs.py
 import json
 import re
 from pathlib import Path
@@ -9,7 +10,7 @@ from config_docs import DOCS, BASE_DIR
 
 def clean_markdown(md: str) -> str:
     """
-    Clean the raw markdown from the OCR JSON.
+    Clean the raw markdown from an OCR JSON:
     - Remove <a id='...'></a> anchors
     - Remove <:: ... ::> metadata blocks
     - Remove HTML comments except PAGE BREAK markers
@@ -27,17 +28,28 @@ def clean_markdown(md: str) -> str:
 def clean_page_text(page: str) -> str:
     """
     Clean a single page's text:
-    - Remove page labels like 'Page 3' or 'Page i'
+    - Remove labels like 'Page 3' or 'Page iv'
     - Remove footnote numbers and superscript markers
-    - Remove extra line breaks and collapse spaces
+    - Fix line breaks and spacing
     """
     text = page.strip()
 
+    # Remove "Page 3", "Page iv", etc.
     text = re.sub(r"\bPage\s+[0-9ivxlcdmIVXLCDM]+\b", "", text)
+
+    # Remove footnote numbers at start of lines: "7. ", "12. ", etc.
     text = re.sub(r"^\s*\d+\.\s*", "", text, flags=re.MULTILINE)
+
+    # Remove caret-style footnote markers like ^14
     text = re.sub(r"\^\d+", "", text)
+
+    # Remove superscript digits like ¹²³
     text = re.sub(r"[⁰¹²³⁴⁵⁶⁷⁸⁹]+", "", text)
+
+    # Join broken lines
     text = re.sub(r"\n+", " ", text)
+
+    # Collapse multiple spaces
     text = re.sub(r"\s{2,}", " ", text)
 
     return text.strip()
@@ -45,8 +57,8 @@ def clean_page_text(page: str) -> str:
 
 def process_from_ocr_json(doc_id: str, ocr_json_path: Path, output_dir: Path):
     """
-    For docs that already went through OCR and are stored as JSON with 'markdown'
-    and <!-- PAGE BREAK --> markers.
+    For docs that already went through OCR and are stored as JSON
+    with 'markdown' and <!-- PAGE BREAK --> markers.
     """
     print(f"[OCR JSON] Processing {doc_id} from {ocr_json_path}")
 
@@ -58,6 +70,8 @@ def process_from_ocr_json(doc_id: str, ocr_json_path: Path, output_dir: Path):
 
     full_md = data["markdown"]
     cleaned_md = clean_markdown(full_md)
+
+    # Split into pages using PAGE BREAK markers
     pages = cleaned_md.split("<!-- PAGE BREAK -->")
 
     cleaned_pages = []
@@ -82,9 +96,6 @@ def process_from_pdf(doc_id: str, pdf_path: Path, output_dir: Path):
     - Extract text page by page using PyPDF2
     - Clean each page
     - Write {doc_id}_clean_final.txt with --- Page i --- markers
-
-    NOTE: If the PDF is actually scanned images (no real text),
-    this will produce empty output. Those need OCR instead.
     """
     print(f"[PDF] Processing {doc_id} from {pdf_path}")
 
@@ -95,7 +106,6 @@ def process_from_pdf(doc_id: str, pdf_path: Path, output_dir: Path):
         raw_text = page.extract_text() or ""
         page_text = clean_page_text(raw_text)
         if not page_text:
-            # Empty or image-only page
             continue
         cleaned_pages.append(f"--- Page {i} ---\n{page_text}")
 

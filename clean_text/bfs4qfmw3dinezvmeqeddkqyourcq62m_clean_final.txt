@@ -1,0 +1,2 @@
+--- Page 0 ---
+10 N10 N10 N10 N15 N15 N15 N15 N20 N20 N20 N20 N 90 W90 W 90 W90 W 85 W85 W 85 W85 W 80 W80 W 80 W80 W 2022242628303234 SST (celsius) Data courtesy of: USDOC/NOAA/NESDIS CoastWatch Satellite: METOP-1 Sensor: AVHRR Date: 2017/05/12 JD 132 Time: 15:46:54 UTC 09:46:54 -0600 Scene time: DAY Projection type: MAPPED Map projection: 47 km/pixel MERCATOR Latitude bounds: 7 N -> 24 N Longitude bounds: 95 W -> 75 W

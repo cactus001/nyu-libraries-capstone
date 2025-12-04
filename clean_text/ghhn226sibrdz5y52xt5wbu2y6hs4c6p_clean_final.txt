@@ -1,0 +1,68 @@
+--- Page 0 ---
+National Climate Services Program Andrew Stern Director, Analyze, Forecast & Support (AFS) Office & Portfolio Fiona Horsfall, Ph.D. Chief, AFSO/Climate Services Branch Presented by Marina Timofeyeva, Ph.D. Climate Scientist, AFSO/Climate Services Branch May 9th, 2016 National Climate Services Program Meeting, Silver Spring, MD
+
+--- Page 1 ---
+NWS HQ & Field Organization The Office of Assistant Administrator AA DAA Office of Planning & Programming for Service Delivery Office of Science & Technology Integration Office of Dissemination Office of Central Processing Office of Facilities Office of Chief Operating Officer Analyze, Forecast, & Support Office National Centers for Env. Prediction National Water Center Office of the Chief of Staff International Affairs Office of the Chief Learning Officer CFO/CAO Enterprise Risk Management & Internal Audit Office Assistant CIO Office of Organizational Excellence Regional Offices New HQ Office Field Office Existing HQ Office Office of Observations Paul Schlatter (A) Courtney Draggon John Ogren (A) John Potts vacant Kevin Cooley Richard Varn (A) John Murphy Deirdre JonesJoe Pica Luis CanoMing JiDave Michaud Andy SternBill Lapenta AR: Carven Scott (A) PR: Ray Tanabe WR: Grant Cooper CR: Chris Strager SR: Steven Cooper ER: Jason Tuell Tom Grazian o (A)Louis Uccellini Laura Furgione Kevin Werner 2AWC: Bob Maxson CPC: Dave DeWitt EMC: Hendrik Tolman NCO: Ben Kyger NHC: Rick Knabb OPC: Tom Cuff SPC: Russ Schneider SWPC: Tom Berger WPC: Dave Novak
+
+--- Page 2 ---
+3Analyze, Forecast & Support Office AFS Director Andy Stern Portfolio Management Dawn McClure (A) Analysis & Mission Support Mark Tew Forecast Services Eli Jacks IDSS NBM Demo Impacts Catalog Demo CaRDS Administration National WCM Ecological Support Digital Policy Short Range Analysis & Prediction Home of the 11 National Service Programs Hazard Simplification Arctic Team Home of the Climate Services Branch and Services Program Team Annual Operating Plan (AFS) Funding for Field Training Programmatic Training National Field Policy
+
+--- Page 3 ---
+411 National Service Programs •Aviation Weather •Climate •Fire Weather •Hydrology/Water Resources •Marine and Coastal •Public Weather •Severe Weather •Space Weather •Tropical Weather •Tsunami •Winter Weather Climate Services are Cross-cutting! 4
+
+--- Page 4 ---
+Climate as Cross-cutting 5Climate Aviation Marine Public Tropical Water Resources Winter Fire Wx Ecological Fcstg Infectious Disease Arctic Surface Transp Severe Wx Health Mission Service Areas Enabling Areas
+
+--- Page 5 ---
+Requests can originate in many places 6Core Partners Presiden tCongres s DO CWeather Enterprise SAB Strategic Plans NOA AAGM/PG M Field Ideas/Needs WRN Roadmap Service Assessment Recommendation sNOAA Line Offices Other Portfolios OM BNAS/NAPA Reports OSTP But not all “ideas” equate to a validated requirement! Requirements must be prioritized against finite resources 6
+
+--- Page 6 ---
+Validation Overview for CaRDS 7Request Originator Tier 1 – First Level (Local) Review (MIC/HIC, MSD, NC Director, Div Chief with clearance by FMC Director) Tier 2 – Service Program Team (SPT) Review Tier 3 – AFS Director Review/Validation Tier 4 – MDC Validation Submit Request (short template) To PIC (as validated field requirement) To AFS (if contained within Portfolio) To NSP Team (for execution) Not Approved - Feedback to Originator Approved Needs/ Requests CaRDS Template Submission (at FMC Level by designated submitter) A Mandate (e.g., executive order, public law, etc.) would enter Cards at Tier 2 Integrat e with SD Portfolio so r Obtain RD/OD Clearance Auto Notification Appeal CaRDS 7
+
+--- Page 7 ---
+New NWS Governance & Field Requirements Validation Process (CaRDS) NWS Executive Council (EC) Portfolio Integration Council (PIC) Mission Delivery Council (MDC) Observations Central Processing Dissemination Science & Technology Integration Analyze, Forecast & Support NWS Governance Councils NWS ORF Portfolios Service Delivery Portfolios (Innovates Solutions) Mission Execution Portfolio (Generates Needs) Requirements Solutions Needs/ Requests 8
+
+--- Page 8 ---
+Climate Example 9WFO Forecaster has a great idea for a new climate product Approval by MIC Approval by Region Review by PET Vote by Climate SPT Review by AFS Dir Review & Vote by MDC Validated Requirement for new Product sent to PIC Submit CaRDS form Trade Space & Resource Discussion Options & Development Possible Social Science Study Testing (OPG) & Training Development Transition to Operations Link to Annual Operating Plan
+
+--- Page 9 ---
+Climate Program – Looking Forward 10•Exciting Times Ahead for Climate Services •Maturing a continuum of information •Increased computing capacity & new sensors (e.g., GOES R) •Filling in weather-climate gap time period •Improved ability to convey IDSS (Climate/Weather Linkage) •Impacts Catalog •Tools to show recurrence frequencies of extreme events •Ability to provide environmental data to core partners to enable their mission areas •Ecological Forecasting •Infectious Diseases •Human Health •Surface Transportation
+
+--- Page 10 ---
+NWS Climate Services Program 11●Climate data stewardship and services ●Monitoring, prediction, assessment, analysis, and diagnostics of the climate system ●Regional and local climate services through distributed service outlets ●Decision support, capacity building, and customer service Deliver climate information for response and preparedness for seasonal to sub-seasonal timescales NWS WFO WSO RFC NCEP CPC EMC NWS HQs Regions CSB
+
+--- Page 11 ---
+Climate Services Branch •Coordinates NWS Climate Program in NWS and NOAA planning activities •Coordinates NWS policy and requirements gathering •Serves as the national coordinator for regional and local climate services •Coordinates development of guidance for operational delivery of NWS climate services •Coordinates development of policies and documents in support of climate services 12
+
+--- Page 12 ---
+•Training 30 hours online training •Module updates and additions as needed Operational Climate Services Delivery •Residence course offered at NWSTC, Kansas City Climate Variability and Change Virtual Course (CVCVC) •In partnership with COMET Advanced Climate Variability and Change Course •Residence course in partnership with COMET Technical training for national and international partners/users 13 Training leveraged by CPO Staff Climate.gov Climate Resilience Toolkit - CRT Building capacity within NWS staff
+
+--- Page 13 ---
+•Climate Services Seminar Series •Factsheets on a variety of climate topics •Outreach 14Building Capacity Grab-and-go Climate Presentation Series (Under Development) NWS Climate Outreach Google Site Provides a "one-stop-shop" for outreach material Partners Exchange Program & Visiting Partners Program http://www.nws.noaa.gov/os/csd/
+
+--- Page 14 ---
+Tools – LCAT •Local Climate Analysis Tool •Uses –Local impacts of climate variability and change –Drought impacts and water resource management –Severe weather (beyond Tavg and Ptotal) –Decision support •CPO partnership –Linked to on Climate.gov –Contract support in FY16 for O&M, redesign, and development of capabilities for the Arctic 15 Supporting the Field
+
+--- Page 15 ---
+National Centers for Environmental Prediction (NCEP) •Aviation Weather Center •Climate Prediction Center - CPC –Monitors and forecasts short-term climate fluctuations and provides information on the effects climate patterns can have on the nation •Environmental Modeling Center - EMC –Develops and improves numerical weather, climate, hydrological and ocean prediction through a broad program in partnership with the research community •National Hurricane Center •NCEP Central Operations - NCO –Sustains and executes the operational suite of numerical analyses and forecast models and prepares NCEP products for dissemination •Ocean Prediction Center •Space Weather Prediction center •Storm Prediction Center •Weather Prediction Center 16
+
+--- Page 16 ---
+Regional Climate Services Climate Services Program Managers – CSPMs •Provide leadership for and manage accountability of local climate services programs •Coordinate and collaborate with NESDIS Regional Climate Services Directors (RCSDs) •Collect user and field requirements and training needs •Develop and nurture partnerships within the regional climate community •Conduct outreach activities within the regions •Participate in or lead projects/studies that help further NOAA Climate Services within the region •Oversee Drought Services and participate in NIDIS projects when appropriate 17
+
+--- Page 17 ---
+Local Climate Services Climate Services Focal Points – CSFPs •Deliver products and services to users •Conduct local education and outreach activities •Interpret products and data for the local community •Gather and quality control daily climate data •Work with partners to develop and deliver products •Produce local climate studies •Through CSPMs, provide support for regional climate services 18
+
+--- Page 18 ---
+Climate Data Services The Climate Services Branch is on point to coordinate the various tools that are provided by NWS and our partners in order to provide Timely, continuous, reliable climate records With our partners at NCEI, NERCC, SRCC & WRCC ✓ WxCoder provides a means for the NWS Cooperative Observer to provide timely, paperless reporting of observations ✓ IV-ROCS for those observers without internet access to provide their observations ✓ NOWData2 provides the NWS Climate Web Pages with the most current data from the NWS Cooperative Observers ✓ xmACIS2 provides the local office a robust set of data retrieval tools in order to provide localized service to their customers ✓ Health of the Network reports to help the WFO identify local data errors ✓ Datzilla to help provide corrections to erroneous data ✓ ThreadEx to provide a longer period of extremes data to the local communities Within the NWS: Manage changes to the NWS Climate Web Pages 19
+
+--- Page 19 ---
+•NESDIS/NCEI – data issues •OAR – CPO, ESRL •Climate.gov/CRT; training; LCAT; RISAs; product development •NOS •Data and expertise exchange •Marine Sanctuaries – IMPACT collaboration/training •NWS Ecological Forecasting Team •Climate Capacity Building Service – traning •NMFS •Climate Capacity Building Service – Tools and training •FY17/18 initiative •AASC – joint activities; support for data management; field office support •RCCs – data services, field office support 20 Developing Partnerships
+
+--- Page 20 ---
+Sustained Partnerships Linking Weather and Climate Services to Enable Health Decisions •Engaging health partners in Africa –Enabling health forecasting and prediction in Africa through the Africa Desk •Pandemic Prediction and Forecasting Science and Technology Working Group –Inter-agency coordination to accelerate the development of infectious disease outbreak prediction and forecasting capabilities •Integration of weather and climate data, health impacts, and messaging –International Engagement with Environment and Climate Change Canada on extreme cold and heat services at border states –Developing tools for issuing heat warnings based on climatology •National Integrated Heat Health Information System in development with CDC –Integrated system and clearinghouse of US agency resources to enhance knowledge of and improve resilience to extreme heat Weekly Hazards Outlook for USAID/FEWS
+
+--- Page 21 ---
+•Climate Prediction Application Science Workshop –Key partnership with CPO, including RISAs –Partnership with academia, state agencies •Climate Diagnostic and Prediction Workshop –Key partnership with AASC and CPO Communications –Partnership with operational climate information producers, researchers, and users 22 Climate Information for Agriculture and Agribusiness Key Annual Meetings March 22-24, 2016 Burlington, VT
+
+--- Page 22 ---
+Summary •This meeting will be a learning experience for all of us –NWS organization –NWS budget –Where you all fit in –Science –Services –Partners •It will help us establish a path forward for more effective climate services delivery 23
