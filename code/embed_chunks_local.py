@@ -10,7 +10,7 @@ INPUT_CHUNKS = BASE_DIR / "chunks_token_based_all.jsonl"
 OUTPUT_EMBEDS = BASE_DIR / "chunks_with_embeddings_all_local.jsonl"
 
 # Strong retrieval model
-MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
+MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"#"sentence-transformers/all-mpnet-base-v2"
 BATCH_SIZE = 64
 
 
@@ -58,6 +58,9 @@ def process_batch(model, records, texts, fout):
             "text": rec["text"],
             "embedding": emb.tolist(),  # numpy array -> list
         }
+        # Preserve document_title if it exists
+        if "document_title" in rec:
+            out_record["document_title"] = rec["document_title"]
         fout.write(json.dumps(out_record, ensure_ascii=False) + "\n")
 
 

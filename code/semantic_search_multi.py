@@ -145,8 +145,19 @@ def main():
         # ----- STEP 3: sort by cross-encoder score -----
         candidates_to_rank.sort(key=lambda x: x["cross_score"], reverse=True)
 
-        # ----- STEP 4: show top chunks -----
-        top_chunks = candidates_to_rank[:TOP_K_CHUNKS]
+        # ----- STEP 4: keep only best chunk per document -----
+        seen_docs = set()
+        unique_chunks = []
+        for cand in candidates_to_rank:
+            doc_id = cand["record"]["doc_id"]
+            if doc_id in seen_docs:
+                continue
+            seen_docs.add(doc_id)
+            unique_chunks.append(cand)
+            if len(unique_chunks) == TOP_K_CHUNKS:
+                break
+
+        top_chunks = unique_chunks
 
         print(f"\nTop {len(top_chunks)} chunks (by STS similarity + keyword filter):\n")
         for rank, c in enumerate(top_chunks, start=1):

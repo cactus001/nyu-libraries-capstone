@@ -6,6 +6,12 @@ def main():
     docs_dir = base_dir / "docs"
     config_path = base_dir / "code" / "config_docs.py"
 
+    # List the PDFs that require OCR instead of standard text extraction.
+    # Add file names exactly as they appear in the docs/ folder.
+    ocr_required = {
+        # Example: "scanned_report.pdf",
+    }
+
     if not docs_dir.exists():
         raise FileNotFoundError(f"Docs folder not found at: {docs_dir}")
 
@@ -18,10 +24,11 @@ def main():
     for pdf in pdf_files:
         # doc_id = filename without extension, spaces -> '-', lowercased
         doc_id = pdf.stem.replace(" ", "-").lower()
+        doc_type = "ocr-pdf" if pdf.name in ocr_required else "pdf"
         entry = (
             "    {\n"
             f"        'doc_id': '{doc_id}',\n"
-            f"        'type': 'pdf',\n"
+            f"        'type': '{doc_type}',\n"
             f"        'pdf_path': DOCS_DIR / '{pdf.name}',\n"
             "    },"
         )

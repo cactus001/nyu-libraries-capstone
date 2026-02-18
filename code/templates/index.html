@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYU Libraries - Semantic Document Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="{{ url_for('static', filename='nyu-libraries-logo.png') }}" alt="NYU Libraries" class="nyu-logo">
+            </div>
+            <div class="header-search">
+                <input type="text" placeholder="search this site" class="header-search-input">
+                <button class="header-search-button" aria-label="Search">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-content">
+            <div class="nav-links">
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Libraries</a>
+                <a href="#" class="nav-link">Services</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-action">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                    Library Catalog
+                </a>
+                <a href="#" class="nav-action">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                    </svg>
+                    My Library Account
+                </a>
+                <a href="#" class="nav-action">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A8.98 8.98 0 0 0 8 15z"/>
+                    </svg>
+                    Ask a Librarian
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="search-widget">
+            <div class="search-tabs">
+                <button class="tab active">Catalog Search</button>
+            </div>
+            
+            <form id="searchForm" class="search-form">
+                <div class="search-form-group">
+                    <label for="searchInput" class="search-label">Search for</label>
+                    <div class="search-input-group">
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            placeholder="Enter your search query..." 
+                            autocomplete="off"
+                            required
+                        >
+                        {#<select class="search-dropdown">
+                            <option>Library catalog</option>
+                            <option>All resources</option>
+                        </select>#}
+                        <button type="submit" id="searchButton" class="search-go-button">
+                            <span class="button-text">GO</span>
+                            <span class="spinner" id="spinner" style="display: none;"></span>
+                        </button>
+                    </div>
+                </div>
+                {# 
+                <div class="search-links">
+                    <a href="#" class="search-link">Advanced search</a>
+                    <p class="search-help">Need the full text of an article? Use the <a href="#" class="search-link">search by citation tool</a>.</p>
+                </div> 
+                #}
+            </form>
+        </div>
+
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+        <div id="results" class="results-container" style="display: none;">
+            <div class="results-section">
+                <h2>Top Results</h2>
+                <div id="chunksList" class="chunks-list"></div>
+            </div>
+
+            <div class="results-section">
+                <h2>Recommended Documents</h2>
+                <div id="documentsList" class="documents-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const searchForm = document.getElementById('searchForm');
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+        const spinner = document.getElementById('spinner');
+        const buttonText = document.querySelector('.button-text');
+        const resultsContainer = document.getElementById('results');
+        const errorMessage = document.getElementById('errorMessage');
+        const chunksList = document.getElementById('chunksList');
+        const documentsList = document.getElementById('documentsList');
+
+        searchForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const query = searchInput.value.trim();
+            if (!query) return;
+
+            // Show loading state
+            searchButton.disabled = true;
+            buttonText.style.display = 'none';
+            spinner.style.display = 'inline-block';
+            errorMessage.style.display = 'none';
+            resultsContainer.style.display = 'none';
+
+            try {
+                const response = await fetch('/search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ query: query }),
+                });
+
+                const data = await response.json();
+
+                if (data.error) {
+                    errorMessage.textContent = data.error;
+                    errorMessage.style.display = 'block';
+                } else {
+                    displayResults(data);
+                }
+            } catch (error) {
+                errorMessage.textContent = 'An error occurred: ' + error.message;
+                errorMessage.style.display = 'block';
+            } finally {
+                // Reset loading state
+                searchButton.disabled = false;
+                buttonText.style.display = 'inline';
+                spinner.style.display = 'none';
+            }
+        });
+
+        function displayResults(data) {
+            // Display chunks
+            if (data.chunks && data.chunks.length > 0) {
+                chunksList.innerHTML = data.chunks.map(chunk => {
+                    let titleText = 'Untitled Document';
+                    if (chunk.document_title && chunk.document_title.trim()) {
+                        let rawTitle = chunk.document_title.trim();
+                        
+                        // Clean up patent titles (remove repetitive parts)
+                        if (rawTitle.includes('United States Patent')) {
+                            // Extract just the meaningful part after the headers
+                            const patentMatch = rawTitle.match(/Patent.*?Office.*?:(.*)/);
+                            if (patentMatch) {
+                                rawTitle = patentMatch[1].trim();
+                            }
+                        }
+                        
+                        titleText = escapeHtml(rawTitle);
+                        
+                        // Smart truncation at word boundary
+                        if (titleText.length > 120) {
+                            titleText = titleText.substring(0, 120);
+                            const lastSpace = titleText.lastIndexOf(' ');
+                            if (lastSpace > 80) {
+                                titleText = titleText.substring(0, lastSpace) + '...';
+                            }
+                        }
+                    }
+                    
+                    // Truncate chunk text to show only a preview
+                    let chunkText = escapeHtml(chunk.text);
+                    const MAX_CHUNK_LENGTH = 250; // Adjust this number to control preview length
+                    if (chunkText.length > MAX_CHUNK_LENGTH) {
+                        chunkText = chunkText.substring(0, MAX_CHUNK_LENGTH);
+                        const lastSpace = chunkText.lastIndexOf(' ');
+                        if (lastSpace > 200) {
+                            chunkText = chunkText.substring(0, lastSpace) + '...';
+                        } else {
+                            chunkText += '...';
+                        }
+                    }
+                    
+                    return `
+                        <div class="chunk-card">
+                            <div class="chunk-header">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap;">
+                                    <span class="chunk-rank">#${chunk.rank}</span>
+                                    <span 
+                                        style="font-weight: bold; font-size: 16px; color: #333; flex: 1; min-width: 200px; cursor: help;" 
+                                        title="${escapeHtml(chunk.document_title || 'Untitled Document')}"
+                                    >
+                                        ${titleText}
+                                    </span>
+                                </div>
+                                <div class="chunk-meta">
+                                    <span class="meta-item">Similarity: ${chunk.cross_score.toFixed(3)}</span>
+                                </div>
+                            </div>
+                            <div class="chunk-text">${chunkText}</div>
+                            <div class="chunk-actions">
+                                <a href="/view/${chunk.doc_id}" target="_blank" class="view-doc-button">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 4.5V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6.5L14 4.5zm-3-1.5V4H4v10h8V5.5h2.5L11 3z" fill="currentColor"/>
+                                        <path d="M10.5 1H3a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4.5L10.5 1z" fill="currentColor" opacity="0.3"/>
+                                    </svg>
+                                    View Document
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            } else {
+                chunksList.innerHTML = '<p class="no-results">No chunks found.</p>';
+            }
+
+            // Display documents
+            if (data.documents && data.documents.length > 0) {
+                documentsList.innerHTML = data.documents.map(doc => {
+                    // Get title from the first chunk of this document
+                    const matchingChunk = data.chunks.find(c => c.doc_id === doc.doc_id);
+                    const docTitle = matchingChunk?.document_title || doc.doc_id;
+                    
+                    return `
+                        <div class="document-card">
+                            <span class="doc-rank">#${doc.rank}</span>
+                            <div class="doc-info">
+                                <div class="doc-id" title="${escapeHtml(docTitle)}">
+                                    ${escapeHtml(docTitle.substring(0, 50))}${docTitle.length > 50 ? '...' : ''}
+                                </div>
+                                <div class="doc-similarity">Similarity: ${doc.similarity.toFixed(3)}</div>
+                            </div>
+                            <a href="/view/${doc.doc_id}" target="_blank" class="view-doc-button-small">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 4.5V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6.5L14 4.5zm-3-1.5V4H4v10h8V5.5h2.5L11 3z" fill="currentColor"/>
+                                </svg>
+                                View
+                            </a>
+                        </div>
+                    `;
+                }).join('');
+            } else {
+                documentsList.innerHTML = '<p class="no-results">No documents found.</p>';
+            }
+
+            resultsContainer.style.display = 'block';
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Allow Enter key to submit
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                searchForm.dispatchEvent(new Event('submit'));
+            }
+        });
+    </script>
+</body>
+</html>
+

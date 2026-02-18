@@ -4,6 +4,12 @@ import re
 from pathlib import Path
 
 from PyPDF2 import PdfReader  # pip install PyPDF2
+try:
+    from pdf2image import convert_from_path  # pip install pdf2image
+    import pytesseract  # pip install pytesseract
+except ImportError:
+    convert_from_path = None
+    pytesseract = None
 
 from config_docs import DOCS, BASE_DIR
 
@@ -118,6 +124,37 @@ def process_from_pdf(doc_id: str, pdf_path: Path, output_dir: Path):
     print(f"  → wrote {out_path}")
 
 
+def process_from_ocr_pdf(doc_id: str, pdf_path: Path, output_dir: Path):
+    """
+    For image-based PDFs requiring OCR:
+    - Convert pages to images (pdf2image)
+    - Run Tesseract OCR per page
+    - Clean text and write {doc_id}_clean_final.txt
+    """
+    if convert_from_path is None or pytesseract is None:
+        raise ImportError("pdf2image and pytesseract are required for 'ocr-pdf' processing.")
+
+    print(f"[OCR PDF] Processing {doc_id} from {pdf_path}")
+
+    images = convert_from_path(str(pdf_path))
+    cleaned_pages = []
+
+    for i, img in enumerate(images):
+        raw_text = pytesseract.image_to_string(img) or ""
+        page_text = clean_page_text(raw_text)
+        if not page_text:
+            continue
+        cleaned_pages.append(f"--- Page {i} ---\n{page_text}")
+
+    final_text = "\n\n".join(cleaned_pages)
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    out_path = output_dir / f"{doc_id}_clean_final.txt"
+    out_path.write_text(final_text, encoding="utf-8")
+
+    print(f"  → wrote {out_path}")
+
+
 def main():
     output_dir = BASE_DIR / "clean_text"
 
@@ -131,6 +168,9 @@ def main():
         elif doc_type == "pdf":
             pdf_path = Path(doc["pdf_path"])
             process_from_pdf(doc_id, pdf_path, output_dir)
+        elif doc_type == "ocr-pdf":
+            pdf_path = Path(doc["pdf_path"])
+            process_from_ocr_pdf(doc_id, pdf_path, output_dir)
         else:
             print(f"⚠️ Unknown type '{doc_type}' for {doc_id}, skipping.")
 
